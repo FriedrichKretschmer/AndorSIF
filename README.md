@@ -7,8 +7,6 @@ Last updated: April 21st, 2014.
 
 ********PART 1: DOWNLOADING AND INSTALLING THE ANDOR LINUX SDK**************
 https://www.andor.com/download/
-username: raf@gwmail.gwu.edu
-password: 4Kay12
 
 Software -> Andor SDK
 
