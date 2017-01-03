@@ -1,6 +1,7 @@
 
 #ifndef SIFIO_H
 #define SIFIO_H
+//---------------------------------------------------------------------------
 
 #include "ATPrimitiveTypes.h"
 #include "ATLibraryExport.h"
@@ -47,8 +48,8 @@ AT_EXP_MOD AT_U32 AT_EXP_CONV ATSIF_GetPropertyType(ATSIF_DataSource _source,
                                                     ATSIF_PropertyType * _propertyType);
 
 AT_EXP_MOD AT_U32 AT_EXP_CONV ATSIF_GetDataStartBytePosition(ATSIF_DataSource _source,
-                                                             AT_32 * _i_startPosition);
+                                                             AT_64 * _i_startPosition);
 
 AT_EXP_MOD AT_U32 AT_EXP_CONV ATSIF_GetPixelCalibration(ATSIF_DataSource _source, ATSIF_CalibrationAxis _axis,
                                                         AT_32 _i_pixel, double * _d_calibValue);
-#endif
+#endif // header define

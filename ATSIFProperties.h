@@ -2,14 +2,19 @@
 #define ATSIFPROPERTIES_H
 
 typedef enum {
+  // Using large numbers to force size to an integer
   ATSIF_AT_8         = 0x40000000,
   ATSIF_AT_U8        = 0x00000001,
   ATSIF_AT_32        = 0x40000002,
   ATSIF_AT_U32       = 0x40000003,
+  ATSIF_AT_64        = 0x40000004,
+  ATSIF_AT_U64       = 0x40000005,
   ATSIF_Float        = 0x40000006,
   ATSIF_Double       = 0x40000007,
   ATSIF_String       = 0x40000008
 } ATSIF_PropertyType;
+
+  // Property Strings
 
 #define  ATSIF_PROP_TYPE                       "Type"
 #define  ATSIF_PROP_ACTIVE                     "Active"
@@ -106,7 +111,26 @@ typedef enum {
 #define  ATSIF_PROP_NOISEFILTER                "NoiseFilter"
 #define  ATSIF_PROP_THRESHOLD                  "Threshold"
 
-#define  ATSIF_PROP_TIME_STAMP                  "TimeStamp"
+#define  ATSIF_PROP_TIME_STAMP                 "TimeStamp"
+
+#define ATSIF_PROP_OUTPUTA_ENABLED             "OutputAEnabled"
+#define ATSIF_PROP_OUTPUTA_WIDTH               "OutputAWidth"
+#define ATSIF_PROP_OUTPUTA_DELAY               "OutputADelay"
+#define ATSIF_PROP_OUTPUTA_POLARITY            "OutputAPolarity"
+#define ATSIF_PROP_OUTPUTB_ENABLED             "OutputBEnabled"
+#define ATSIF_PROP_OUTPUTB_WIDTH               "OutputBWidth"
+#define ATSIF_PROP_OUTPUTB_DELAY               "OutputBDelay"
+#define ATSIF_PROP_OUTPUTB_POLARITY            "OutputBPolarity"
+#define ATSIF_PROP_OUTPUTC_ENABLED             "OutputCEnabled"
+#define ATSIF_PROP_OUTPUTC_WIDTH               "OutputCWidth"
+#define ATSIF_PROP_OUTPUTC_DELAY               "OutputCDelay"
+#define ATSIF_PROP_OUTPUTC_POLARITY            "OutputCPolarity"
+#define ATSIF_PROP_GATE_MODE                   "GateMode"
+#define ATSIF_PROP_GATE_WIDTH                  "GateWidth"
+#define ATSIF_PROP_GATE_DELAY                  "GateDelay"
+#define ATSIF_PROP_GATE_DELAY_STEP             "GateDelayStep"
+#define ATSIF_PROP_GATE_WIDTH_STEP             "GateWidthStep"
+
 /*
   To retrieve the time stamp information create the property name like so:
   "TimeStamp 0" will return the first frame time stamp (0 based index)

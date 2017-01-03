@@ -50,4 +50,9 @@ Make sure you install the Andor Linux SDK on every machine you plan on using
 You don't have to compile the .mexa64 file every time, most of the time the same file will  
 work on different machines.  
 Just put the atsifio.mexa64 and sifopen99.m in the same folder, and run from there.  
-You should be able to open any andor .SIF files directly with matlab.  
+You should be able to open any andor .SIF files directly with matlab.
+
+If you get an error about missing libatsifio.so.2 then you need to add this to your console
+before running matlab. This will point matlab to the shared objects.
+
+export LD_LIBRARY_PATH=/usr/local/lib/
